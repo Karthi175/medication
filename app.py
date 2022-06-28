@@ -219,7 +219,9 @@ def social():
   return {'soc_op':soc_list}
 
 
-app.run()
+
+if __name__ == '__main__':
+    app.run()
 
 def _build_cors_preflight_response():    
     response = make_response()
